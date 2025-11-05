@@ -1,0 +1,142 @@
+--Check if there are any missing values or nulls
+select 
+count(*) filter (where 'Age' is NULL) as empty_age,
+count(*) filter (where 'Gender' is NULL) as empty_gender,
+count(*) filter (where 'Income_Level' is NULL) as empty_income_level,
+count(*) filter (where 'Marital_Status' is NULL) as empty_marital_status,
+count(*) filter (where 'Education_Level' is NULL) as empty_education_level,
+count(*) filter (where 'Occupation' is NULL) as empty_occupation,
+count(*) filter (where 'Location' is NULL) as empty_location,
+count(*) filter (where 'Purchase_Category' is NULL) as empty_purchase_category,
+count(*) filter (where 'Purchase_Amount' is NULL) as empty_purchase_amount,
+count(*) filter (where 'Income_Level' is NULL) as empty_income,
+count(*) filter (where 'Frequency_of_Purchase' is NULL) as empty_frequency_of_purchase,
+count(*) filter (where 'Purchase_Channel' is NULL) as empty_purchase_chanell,
+count(*) filter (where 'Brand_Loyalty' is NULL) as empty_brand_loyalty,
+count(*) filter (where 'Product_Rating' is NULL) as empty_product_rating,
+count(*) filter (where 'Time_Spent_on_Product_Research(hours)' is NULL) as empty_time_spent_on_product_research,
+count(*) filter (where 'Social_Media_Influence' is NULL) as empty_social_media_influence,
+count(*) filter (where 'Discount_Sensitivity' is NULL) as empty_discount_sensitivity,
+count(*) filter (where 'Return_Rate' is NULL) as empty_return_rate,
+count(*) filter (where 'Customer_Satisfaction' is NULL) as empty_customer_satisfaction,
+count(*) filter (where 'Engagement_with_Ads' is NULL) as empty_engagaement_with_ads,
+count(*) filter (where 'Device_Used_for_Shopping' is NULL) as empty_device_used,
+count(*) filter (where 'Payment_Method' is NULL) as empty_payment_method,
+count(*) filter (where 'Time_of_Purchase' is NULL) as empty_time_of_purchase,
+count(*) filter (where 'Discount_Used' is NULL) as empty_discount_used,
+count(*) filter (where 'Customer_Loyalty_Program_Member' is NULL) as empty_customer_loyalty,
+count(*) filter (where 'Purchase_Intent' is NULL) as empty_purchase_intent,
+count(*) filter (where 'Shipping_Preference' is NULL) as empty_shipping_preference,
+count(*) filter (where 'Time_to_Decision' is NULL) as empty_time_to_decision
+from "Ecom"
+
+--Rename column names for easier use
+ALTER table "Ecom" RENAME COLUMN "Customer_ID" to customer_id;
+ALTER table "Ecom" RENAME COLUMN "Gender" to gender;
+ALTER table "Ecom" RENAME COLUMN "Age" to age;
+ALTER table "Ecom" RENAME COLUMN "Income_Level" to income_level;
+ALTER table "Ecom" RENAME COLUMN "Marital_Status" to marital_status;
+ALTER table "Ecom" RENAME COLUMN "Education_Level" to education;
+ALTER table "Ecom" RENAME COLUMN "Occupation" to occupation;
+ALTER table "Ecom" RENAME COLUMN "Location" to location;
+ALTER table "Ecom" RENAME COLUMN "Purchase_Category" to category;
+ALTER TABLE "Ecom" RENAME COLUMN "Purchase_Amount" to amount;
+ALTER TABLE "Ecom" RENAME COLUMN "Frequency_of_Purchase" to frequency;
+ALTER TABLE "Ecom" RENAME COLUMN "Purchase_Channel" to channel;
+ALTER TABLE "Ecom" RENAME COLUMN "Brand_Loyalty" to brand_loyalty;
+ALTER TABLE "Ecom" RENAME COLUMN "Product_Rating" to rating;
+ALTER TABLE "Ecom" RENAME COLUMN "Time_Spent_on_Product_Research(hours)" to time_spent_hours;
+ALTER TABLE "Ecom" RENAME COLUMN "Social_Media_Influence" to social_media_influence;
+ALTER TABLE "Ecom" RENAME COLUMN "Discount_Sensitivity" to discount_sensitivity;
+ALTER TABLE "Ecom" RENAME COLUMN "Return_Rate" to return_rate;
+ALTER TABLE "Ecom" RENAME COLUMN "Customer_Satisfaction" to satisfaction;
+ALTER TABLE "Ecom" RENAME COLUMN "Engagement_with_Ads" to ad_engagement;
+ALTER TABLE "Ecom" RENAME COLUMN "Device_Used_for_Shopping" to device;
+ALTER TABLE "Ecom" RENAME COLUMN "Payment_Method" to payment_method;
+ALTER TABLE "Ecom" RENAME COLUMN "Time_of_Purchase" to time_of_purchase;
+ALTER TABLE "Ecom" RENAME COLUMN "Discount_Used" to discount;
+ALTER TABLE "Ecom" RENAME COLUMN "Customer_Loyalty_Program_Member" to loyalty_member;
+ALTER TABLE "Ecom" RENAME COLUMN "Purchase_Intent" to intent;
+ALTER TABLE "Ecom" RENAME COLUMN "Shipping_Preference" to shipping_preference;
+ALTER TABLE "Ecom" RENAME COLUMN "Time_to_Decision" to time_to_decision_min
+
+--explore data
+select min(age), max(age)
+from ecom;
+
+select count (*) as order_count, count (distinct customer_id) as unique_customers
+from ecom;
+
+select round(avg(amount),2) as AOV
+from ecom;
+
+select category
+from ecom
+group by category
+
+--clean category by removing extrta spaces and parentheses
+
+update ecom
+set category= trim(regexp_replace(replace(replace(category,  ')', ''), '(', ''), '\s{2,}', ' ', 'g'))
+where category like '%)%' or category like '%(%';
+
+update ecom
+set category = 'Travel & Leisure (Flights)'
+where category ilike 'Travel & Leisure  Flights';
+
+--Remove currency sign from the amount 
+UPDATE ecom
+SET amount = regexp_replace(amount, '[^0-9.,]','', 'g');
+--and convert amount to numeric
+ALTER table ecom
+ALTER column amount TYPE numeric(10,2)
+USING amount ::numeric;
+
+--change gender
+UPDATE ecom
+set gender = 'Non-binary'
+where gender IN('Polygender', 'Genderfluid','Genderqueer', 'Bigender', 'Agender')
+
+--create a new column with age groups
+alter table ecom
+add column age_group text
+
+update ecom
+set age_group=case 
+when age between 18 and 24 then '18-24'
+when age between 25 and 32 then '25-32'
+when age between 33 and 41 then '33-41'
+when age between 42 and 50 then '42-50'
+else '50+'
+end;
+
+--create new column with decision categorization
+alter table ecom
+add column decision_group text;
+
+update ecom
+set decision_group=case 
+when time_to_decision_min <=5 then 'Very fast'
+when time_to_decision_min between 6 and 10 then 'Average'
+Else 'Slow' end;
+
+--loyalty group
+alter table ecom
+add column loyalty_group text;
+
+update ecom
+set loyalty_group=case 
+when brand_loyalty >=3 then 'High loyalty'
+when brand_loyalty <3 then 'Low loyalty'
+else 'Unknown' end;
+
+--satisfaction group
+alter table ecom
+add column satisfaction_group text;
+
+update ecom
+set satisfaction_group=
+case 
+when satisfaction >=8 then 'High satisfaction'
+when satisfaction between 4 and 7 then 'Medium satisfaction'
+else 'Low satisfaction' end;
