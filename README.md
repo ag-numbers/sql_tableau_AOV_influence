@@ -37,20 +37,34 @@ All data cleaning and transformation were done in **PostgreSQL**:
 
 | Slice Type | Hypothesis | Conclusion |
 |-------------|-------------|------------|
-| **Demographic** | Higher income customers have higher AOV | ❌ Not supported. Income level does not significantly influence purchase amount in this dataset. |
-| **Demographic** | Older customers have higher AOV | ❌ Not supported. The youngest customer group (18–24) has the highest AOV. AOV gradually decreases with age but increases again for the oldest group. |
-| **Behavioral** | Customers with higher satisfaction rating have higher AOV | ❌ Not supported. AOV does not increase with satisfaction. Medium satisfaction group has the highest AOV, which may be influenced by incentives. |
-| **Behavioral** | Customers with high ad engagement have higher AOV | ❌ Not supported. Spending does not increase with ad engagement. |
-| **Decision-based** | Customers with shorter decision times have higher AOV | ❌ Not supported. Customers with **average decision times** have the highest AOV. |
-| **Decision-based** | Customers with strong intent (“planned”) have higher AOV than impulsive buyers | ❌ Not supported. **Desire-driven** (wants-based) purchases lead to the highest AOV, while impulsive intent shows the lowest. |
-| **Contextual** | Smartphone users have higher AOV than desktop users | ✅ Supported. Smartphone customers have the highest AOV. |
-| **Contextual** | Customers have higher AOV on online purchases than in-store | ⚠️ Partially supported. Customers using **mixed channels** have the highest AOV, suggesting the importance of **omnichannel integration**. |
+| **Demographic** | Higher **income customers** have higher AOV | ❌ Not supported. Income level does not significantly influence purchase amount in this dataset. |
+| **Demographic** | **Older** customers have higher AOV | ❌ Not supported. The youngest customer group (18–24) has the highest AOV. AOV gradually decreases with age but increases again for the oldest group. |
+| **Behavioral** | Customers with higher **satisfaction rating** have higher AOV | ❌ Not supported. AOV does not increase with satisfaction. Medium satisfaction group has the highest AOV, which may be influenced by incentives. |
+| **Behavioral** | Customers with high **ad engagement** have higher AOV | ❌ Not supported. Spending does not increase with ad engagement. |
+| **Decision-based** | Customers with shorter **decision times** have higher AOV | ❌ Not supported. Customers with **average decision times** have the highest AOV. |
+| **Decision-based** | Customers with strong **intent** (“planned”) have higher AOV than impulsive buyers | ❌ Not supported. **Desire-driven** (wants-based) purchases lead to the highest AOV, while impulsive intent shows the lowest. |
+| **Contextual** | **Smartphone** users have higher AOV than desktop users | ✅ Supported. Smartphone customers have the highest AOV. |
+| **Contextual** | Customers have higher AOV on **online** purchases than in-store | ⚠️ Partially supported. Customers using **mixed channels** have the highest AOV, suggesting the importance of **omnichannel integration**. |
+
+## 🔗 Cross-Dimensional Hypotheses
+
+To explore how multiple factors interact to influence spending behavior, I also tested several **cross-dimensional hypotheses**.  
+These combine demographic, behavioral, and contextual variables to uncover deeper insights into customer spending patterns.
+
+### 📊 Cross-Dimensional Findings
+
+| Dimensions | Conclusion |
+|-------------|-------------|
+| **AOV by loyalty group & member** | Loyalty membership possession **positively increases AOV**. Loyal customers consistently spend more than non-members. |
+| **AOV by income & age** | AOV is **higher among young customers with high income**. Income is a stronger driver for higher AOV than age. For customers aged **33+**, the difference in AOV by income level becomes minimal — suggesting older customers are more **budget-conscious**. |
+| **AOV by social media influence & ad engagement** | *Wants-based intent* among customers **does not correlate with income**, indicating that emotionally driven purchases are not necessarily tied to financial level. |
+| **AOV by intent & income** | High-income customers with **wants-based or planned intent** show the **highest AOV**, while impulsive buyers spend less regardless of income level. |
 
 ---
 
 ## 💡 Business Takeaways
-- Optimize **mobile shopping experience** — smartphone users spend more  
-- Target **emotion-driven customers** (wants-based intent)  
+- From contexual hypotheses: Optimize **mobile shopping experience** becuase smartphone users spend more  
+- From decision-based hypothese: Target **emotion-driven customers** (wants-based intent)  
 - Use **upsell opportunities** for ad-engaged users  
 - Support **multi-channel experiences** to increase overall spending  
 
