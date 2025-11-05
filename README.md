@@ -9,6 +9,8 @@ This project started with a simple question:
 To answer that, I explored demographic, behavioral, decision-based, and contextual factors that might explain variations in AOV.  
 The dataset was downloaded from **Kaggle** and contains data representing customer demographics, purchase behaviors, and decision-related attributes.
 
+This project helped me deepen my SQL data cleaning and analytical thinking — especially around hypothesis testing and building a clear story in Tableau.
+
 ## Data structure
 <img width="158" height="619" alt="Screenshot 2025-11-05 at 15 40 30" src="https://github.com/user-attachments/assets/be408bde-6292-4892-bca4-176b44648fd8" />
 ---
