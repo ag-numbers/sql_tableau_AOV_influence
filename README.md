@@ -46,7 +46,7 @@ All data cleaning and transformation were done in **PostgreSQL**:
 | **Contextual** | **Smartphone** users have higher AOV than desktop users | ✅ Supported. Smartphone customers have the highest AOV. |
 | **Contextual** | Customers have higher AOV on **online** purchases than in-store | ⚠️ Partially supported. Customers using mixed channels** have the highest AOV, suggesting the importance of omnichannel integration. |
 
-## 🔗 Cross-Dimensional Hypotheses
+## 🔗 Cross-Dimensional Analysis
 
 To explore how multiple factors interact to influence spending behavior, I also tested several **cross-dimensional hypotheses**.  
 These combine demographic, behavioral, and contextual variables to uncover deeper insights into customer spending patterns.
