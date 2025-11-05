@@ -29,29 +29,22 @@ All data cleaning and transformation were done in **PostgreSQL**:
 ---
 
 ## 🔍 Analysis Approach
-I built hypotheses based on real marketing segmentation frameworks:
+- I built hypotheses based on real marketing segmentation frameworks
+- Each hypothesis was tested in SQL
+- The data was visualized in Tableau to either support or reject each hypotheses
 
-| Slice Type | Hypothesis |
-|-------------|-------------|
-| **Demographic** | Higher income or older customers have higher AOV |
-| **Behavioral** | Customers with higher satisfaction or ad engagement have higher AOV |
-| **Decision-based** | Customers with faster decision times or stronger intent (“planned”) have higher AOV |
-| **Contextual** | Smartphone users or online shoppers have higher AOV |
+## 📊 Hypotheses and Conclusions
 
-Each hypothesis was tested in SQL, aggregated, and visualized in **Tableau**.
-
----
-
-## 📈 Key Insights
-- **Demographic** (age, income) and **behavioral** (satisfaction, ad engagement) factors had **low impact** on AOV  
-- **Decision-based** and **contextual** factors had stronger influence:
-  - Smartphone users showed the **highest AOV**
-  - **Wants-based intent** led to higher spend than planned or impulsive purchases
-  - Customers using **mixed channels (online + offline)** spent the most, highlighting the value of omnichannel experience
-- Cross-dimensional findings:
-  - **Loyalty membership** increases AOV  
-  - **High income + young age** → higher AOV  
-  - **Social media influence + ad engagement** show moderate correlation with AOV
+| Slice Type | Hypothesis | Conclusion |
+|-------------|-------------|------------|
+| **Demographic** | Higher income customers have higher AOV | ❌ Not supported. Income level does not significantly influence purchase amount in this dataset. |
+| **Demographic** | Older customers have higher AOV | ❌ Not supported. The youngest customer group (18–24) has the highest AOV. AOV gradually decreases with age but increases again for the oldest group. |
+| **Behavioral** | Customers with higher satisfaction rating have higher AOV | ❌ Not supported. AOV does not increase with satisfaction. Medium satisfaction group has the highest AOV, which may be influenced by incentives. |
+| **Behavioral** | Customers with high ad engagement have higher AOV | ❌ Not supported. Spending does not increase with ad engagement. |
+| **Decision-based** | Customers with shorter decision times have higher AOV | ❌ Not supported. Customers with **average decision times** have the highest AOV. |
+| **Decision-based** | Customers with strong intent (“planned”) have higher AOV than impulsive buyers | ❌ Not supported. **Desire-driven** (wants-based) purchases lead to the highest AOV, while impulsive intent shows the lowest. |
+| **Contextual** | Smartphone users have higher AOV than desktop users | ✅ Supported. Smartphone customers have the highest AOV. |
+| **Contextual** | Customers have higher AOV on online purchases than in-store | ⚠️ Partially supported. Customers using **mixed channels** have the highest AOV, suggesting the importance of **omnichannel integration**. |
 
 ---
 
@@ -80,9 +73,7 @@ Each dashboard page explores a different perspective:
 
 You can filter by **gender** or **category** to explore different spending patterns.
 
-
-
-<img width="875" height="619" alt="Screenshot 2025-11-05 at 15 37 48" src="https://github.com/user-attachments/assets/6d763f8c-5cb4-4fee-bedc-84dee0c7a588" />
+[<img width="875" height="619" alt="Screenshot 2025-11-05 at 15 37 48" src="https://github.com/user-attachments/assets/6d763f8c-5cb4-4fee-bedc-84dee0c7a588" />](https://github.com/ag-numbers/sql_tableau_AOV_influence/blob/main/README.md)
 
 
 <img width="889" height="635" alt="Screenshot 2025-11-05 at 15 37 27" src="https://github.com/user-attachments/assets/6f30b82d-41d8-4873-89a5-0c7cb359c9b2" />
