@@ -41,10 +41,10 @@ All data cleaning and transformation were done in **PostgreSQL**:
 | **Demographic** | **Older** customers have higher AOV | ❌ Not supported. The youngest customer group (18–24) has the highest AOV. AOV gradually decreases with age but increases again for the oldest group. |
 | **Behavioral** | Customers with higher **satisfaction rating** have higher AOV | ❌ Not supported. AOV does not increase with satisfaction. Medium satisfaction group has the highest AOV, which may be influenced by incentives. |
 | **Behavioral** | Customers with high **ad engagement** have higher AOV | ❌ Not supported. Spending does not increase with ad engagement. |
-| **Decision-based** | Customers with shorter **decision times** have higher AOV | ❌ Not supported. Customers with **average decision times** have the highest AOV. |
-| **Decision-based** | Customers with strong **intent** (“planned”) have higher AOV than impulsive buyers | ❌ Not supported. **Desire-driven** (wants-based) purchases lead to the highest AOV, while impulsive intent shows the lowest. |
+| **Decision-based** | Customers with shorter **decision times** have higher AOV | ❌ Not supported. Customers with average decision times have the highest AOV. |
+| **Decision-based** | Customers with strong **intent** (“planned”) have higher AOV than impulsive buyers | ❌ Not supported. Desire-driven (wants-based) purchases lead to the highest AOV, while impulsive intent shows the lowest. |
 | **Contextual** | **Smartphone** users have higher AOV than desktop users | ✅ Supported. Smartphone customers have the highest AOV. |
-| **Contextual** | Customers have higher AOV on **online** purchases than in-store | ⚠️ Partially supported. Customers using **mixed channels** have the highest AOV, suggesting the importance of **omnichannel integration**. |
+| **Contextual** | Customers have higher AOV on **online** purchases than in-store | ⚠️ Partially supported. Customers using mixed channels** have the highest AOV, suggesting the importance of omnichannel integration. |
 
 ## 🔗 Cross-Dimensional Hypotheses
 
@@ -55,18 +55,18 @@ These combine demographic, behavioral, and contextual variables to uncover deepe
 
 | Dimensions | Conclusion |
 |-------------|-------------|
-| **AOV by loyalty group & member** | Loyalty membership **increases AOV**. |Loyal customers consistently spend more than non-members. |
+| **AOV by loyalty group & member** | Loyalty membership increases AOV. |Loyal customers spend more than non-members. |
 | **AOV by income & age** | Income is a stronger driver for higher AOV than age.|
-| **AOV by social media influence & ad engagement** | *Wants-based intent* among customers **does not correlate with income**| 
-| **AOV by intent & income** | Impulsive buyers spend less, even if they have more money.|
+| **AOV by social media influence & ad engagement** | Social media ads and enagegment do not increase AOV. | 
+| **AOV by intent & income** | High-income customers who want or plan their purchases spend the most. Impulsive buyers spend less even if they earn more.|
 
 ---
 ## 💡 Business Recommendations
 
 1. Improving the mobile website or app can directly increase order value.
-2. Marketing campaigns should focus on emotional motivation.
-3. Customers who are part of a loyalty program spend more. Keep rewarding customers who are part of the loyalty program and encourage new customers to join.
-4. Make it easy for people to switch between channels (browse online, buy in store).
+2. Phrase marketing campaigns on those who want something, not just need it.
+3. 4. Make it easy for customers to switch between channels (let them browse online and buy in store).
+4. Encourage customers to join loyalty memebrship program and reward current members.
 
 ---
 
