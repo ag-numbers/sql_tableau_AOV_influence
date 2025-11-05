@@ -87,6 +87,9 @@ You can filter by **gender** or **category** to explore different spending patte
 
 ---<img width="880" height="618" alt="Screenshot 2025-11-05 at 15 35 48" src="https://github.com/user-attachments/assets/582c74af-bb05-42a2-9499-787f72e9e7d7" />
 
+**Data structure**
+<img width="158" height="619" alt="Screenshot 2025-11-05 at 15 40 30" src="https://github.com/user-attachments/assets/be408bde-6292-4892-bca4-176b44648fd8" />
+
 ---
 
 ## ⚙️ Dataset Disclaimer
