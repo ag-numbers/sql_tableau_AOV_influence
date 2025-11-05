@@ -55,45 +55,18 @@ These combine demographic, behavioral, and contextual variables to uncover deepe
 
 | Dimensions | Conclusion |
 |-------------|-------------|
-| **AOV by loyalty group & member** | Loyalty membership possession **positively increases AOV**. Loyal customers consistently spend more than non-members. |
-| **AOV by income & age** | AOV is **higher among young customers with high income**. Income is a stronger driver for higher AOV than age. For customers aged **33+**, the difference in AOV by income level becomes minimal — suggesting older customers are more **budget-conscious**. |
-| **AOV by social media influence & ad engagement** | *Wants-based intent* among customers **does not correlate with income**, indicating that emotionally driven purchases are not necessarily tied to financial level. |
-| **AOV by intent & income** | High-income customers with **wants-based or planned intent** show the **highest AOV**, while impulsive buyers spend less regardless of income level. |
+| **AOV by loyalty group & member** | Loyalty membership **increases AOV**. |Loyal customers consistently spend more than non-members. |
+| **AOV by income & age**  Income is a stronger driver for higher AOV than age.
+| **AOV by social media influence & ad engagement** | *Wants-based intent* among customers **does not correlate with income** 
+| **AOV by intent & income** | Impulsive buyers spend less, even if they have more money.
 
 ---
+## 💡 Business Recommendations
 
-## 💡 Business Takeaways
-## 💡 Business Takeaways
-
-1. **Mobile experience matters.**  
-   Customers shopping on smartphones spend the most. Improving the mobile website or app can directly increase order value.
-
-2. **Emotions drive spending.**  
-   People who buy because they *want* something (not because they *need* it) spend more. Marketing campaigns should tap into emotional motivation — not just logic or discounts.
-
-3. **Loyal customers are valuable.**  
-   Customers who are part of a loyalty program spend more. Keep rewarding them and encourage new customers to join.
-
-4. **Younger, high-income customers are the top spenders.**  
-   They are less price-sensitive and more open to impulse or desire-driven purchases.
-
-5. **Older customers are more careful with money.**  
-   They compare prices and spend less regardless of income, so loyalty and trust campaigns may work better for this group.
-
-6. **Omnichannel shopping works.**  
-   Customers who use both online and in-store channels have the highest AOV. Make it easy for people to switch between channels (e.g., browse online, buy in store).
-
-7. **Decision time isn’t everything.**  
-   The fastest or slowest buyers don’t always spend the most. Focus on helping customers make confident decisions instead of rushing them.
-
-8. **Social media influence doesn’t always mean higher spend.**  
-   Being exposed to ads or social media doesn’t guarantee higher AOV — it’s the *intent* behind the purchase that matters.
-
----
-
-✅ **In short:**  
-Improving the mobile and omnichannel experience, focusing on emotional and loyal customers, and tailoring offers by age and intent can help businesses increase their average order value.
-  
+1. Improving the mobile website or app can directly increase order value.
+2. Marketing campaigns should focus on emotional motivation.
+3. Customers who are part of a loyalty program spend more. Keep rewarding customers who are part of the loyalty program and encourage new customers to join.
+4. Make it easy for people to switch between channels (browse online, buy in store).
 
 ---
 
