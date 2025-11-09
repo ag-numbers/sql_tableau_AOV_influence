@@ -7,7 +7,7 @@ This project started with a simple question:
 **What are the factors that influence Average Order Value (AOV)? What recommendations I can give to business based on findings?**
 
 **Key insight: It’s not who customers are — it’s how they shop.**
-My analysis of e-commerce orders revealed that income, age, and ad engagement barely influence spending, while mobile users, loyal members, and omnichannel shoppers deliver the highest order values. These findings shaped four clear business actions: optimize mobile, reward loyalty, and simplify online–offline transitions.
+My analysis revealed that income, age, and ad engagement barely influence spending, while mobile users, loyal members, and omnichannel shoppers deliver the highest order values. These findings shaped four clear business actions: optimize mobile, reward loyalty, and simplify online–offline transitions.
 
 This project helped me deepen my SQL data cleaning and analytical thinking — especially around hypothesis testing and building a clear story in Tableau.
 
