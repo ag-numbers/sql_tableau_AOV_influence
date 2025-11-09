@@ -2,12 +2,12 @@
 SQL + Tableau project exploring what drives higher Average Order Value (AOV) 
 # 📊 Factors Influencing Average Order Value (AOV)
 
-## 🧠 Project Overview
+## 🧠 Project Summary
 This project started with a simple question:  
-**What makes some customers spend more than others?**
+**What are the factors that influence Average Order Value (AOV)? What recommendations I can give to business based on findings?**
 
-To answer that, I explored demographic, behavioral, decision-based, and contextual factors that might explain variations in AOV.  
-The dataset was downloaded from **Kaggle** and contains data representing customer demographics, purchase behaviors, and decision-related attributes.
+**Key insight: It’s not who customers are — it’s how they shop.**
+My analysis of e-commerce orders revealed that income, age, and ad engagement barely influence spending, while mobile users, loyal members, and omnichannel shoppers deliver the highest order values. These findings shaped four clear business actions: optimize mobile, reward loyalty, and simplify online–offline transitions.
 
 This project helped me deepen my SQL data cleaning and analytical thinking — especially around hypothesis testing and building a clear story in Tableau.
 
@@ -65,7 +65,7 @@ These combine demographic, behavioral, and contextual variables to uncover deepe
 
 1. Improving the mobile website or app can directly increase order value.
 2. Phrase marketing campaigns on those who want something, not just need it.
-3. 4. Make it easy for customers to switch between channels (let them browse online and buy in store).
+3. Make it easy for customers to switch between channels (let them browse online and buy in store).
 4. Encourage customers to join loyalty memebrship program and reward current members.
 
 ---
