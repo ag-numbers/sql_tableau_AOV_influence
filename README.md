@@ -89,8 +89,7 @@ You can filter by **gender** or **category** to explore different spending patte
 
 **Link to the dashboard** https://public.tableau.com/app/profile/alina.lihostaieva/viz/FactorsinfluencingAOV/Story1 
 
-[<img width="875" height="619" alt="Screenshot 2025-11-05 at 15 37 48" src="https://github.com/user-attachments/assets/6d763f8c-5cb4-4fee-bedc-84dee0c7a588" />](https://github.com/ag-numbers/sql_tableau_AOV_influence/blob/main/README.md)
-
+<img width="928" height="671" alt="Screenshot 2025-11-09 at 16 29 37" src="https://github.com/user-attachments/assets/14b07e85-a8ad-437f-875c-da5db2124fc2" />
 
 <img width="889" height="635" alt="Screenshot 2025-11-05 at 15 37 27" src="https://github.com/user-attachments/assets/6f30b82d-41d8-4873-89a5-0c7cb359c9b2" />
 
