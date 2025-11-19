@@ -7,7 +7,7 @@ This project started with a simple question:
 **What are the factors that influence Average Order Value (AOV)? What recommendations I can give to business based on findings?**
 
 **Key insight: It’s not who customers are — it’s how they shop.**
-My analysis revealed that income, age, and ad engagement barely influence spending, while mobile users, loyal members, and omnichannel shoppers deliver the highest order values. These findings shaped four clear business actions: optimize mobile, reward loyalty, and simplify online–offline transitions.
+My analysis revealed that income, age, and ad engagement barely influence spending, while mobile users, wants-based intent and omnichannel shoppers deliver the highest order values. These findings shaped four clear business actions: optimize mobile journey, focus on targering those who want somthing and simplify online–offline transitions.
 
 This project helped me deepen my SQL data cleaning and analytical thinking — especially around hypothesis testing and building a clear story in Tableau.
 
@@ -55,7 +55,7 @@ These combine demographic, behavioral, and contextual variables to uncover deepe
 
 | Dimensions | Conclusion |
 |-------------|-------------|
-| **AOV by loyalty group & member** | Loyalty membership increases AOV. |Loyal customers spend more than non-members. |
+| **AOV by loyalty group & member** | Loyalty membership does not increase AOV. |Loyal customers spend less than non-members. |
 | **AOV by income & age** | Income is a stronger driver for higher AOV than age.|
 | **AOV by social media influence & ad engagement** | Social media ads and enagegment do not increase AOV. | 
 | **AOV by intent & income** | High-income customers who want or plan their purchases spend the most. Impulsive buyers spend less even if they earn more.|
@@ -66,7 +66,6 @@ These combine demographic, behavioral, and contextual variables to uncover deepe
 1. Improving the mobile website or app can directly increase order value.
 2. Phrase marketing campaigns on those who want something, not just need it.
 3. Make it easy for customers to switch between channels (let them browse online and buy in store).
-4. Encourage customers to join loyalty memebrship program and reward current members.
 
 ---
 
