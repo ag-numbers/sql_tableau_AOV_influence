@@ -55,10 +55,10 @@ These combine demographic, behavioral, and contextual variables to uncover deepe
 
 | Dimensions | Conclusion |
 |-------------|-------------|
-| **AOV by loyalty group & member** | Loyalty membership does not increase AOV. |Loyal customers spend less than non-members. |
-| **AOV by income & age** | Income is a stronger driver for higher AOV than age.|
-| **AOV by social media influence & ad engagement** | Social media ads and enagegment do not increase AOV. | 
-| **AOV by intent & income** | High-income customers who want or plan their purchases spend the most. Impulsive buyers spend less even if they earn more.|
+| **AOV by loyalty group & member** | Loyalty membership increases AOV. |❌ Not supported. Loyal customers spend less than non-members. |
+| **AOV by income & age** | Income is a stronger driver for spending than age.|✅ Supported. Income is a stronger driver for higher AOV than age.|
+| **AOV by social media influence & ad engagement** | High ad engagement and social media influence would increase AOV.| ❌ Not supported. Social media ads and enagegment do not increase AOV. | 
+| **AOV by intent & income** |Impulsive buyers have highest AOV.| ❌ Not supported. High-income customers who want or plan their purchases spend the most. Impulsive buyers spend less even if they earn more.|
 
 ---
 ## 💡 Business Recommendations
