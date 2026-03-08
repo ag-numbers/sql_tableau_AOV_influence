@@ -101,5 +101,5 @@ You can filter by **gender** or **category** to explore different spending patte
 
 ## ⚙️ Dataset Disclaimer
 Limitations: The differences in AOV between some segments are relatively small. Without statistical significance testing these results should be interpreted as directional insights rather than definitive conclusions.
-The dataset was downloaded from **Kaggle** and contains **synthetic, anonymized data**.  
-It is used **for learning and portfolio purposes only** — all customer information is fictional.
+The dataset was downloaded from Kaggle and contains synthetic, anonymized data.  
+It is used for learning and portfolio purposes only. All customer information is fictional.
