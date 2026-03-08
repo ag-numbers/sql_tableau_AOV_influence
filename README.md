@@ -53,8 +53,8 @@ These combine demographic, behavioral, and contextual variables to uncover deepe
 
 ### 📊 Cross-Dimensional Findings
 
-| Dimensions | Conclusion |
-|-------------|-------------|
+| Dimensions | Hypothesis | Conclusion |
+|-------------|-------------|-------------|
 | **AOV by loyalty group & member** | Loyalty membership increases AOV. |❌ Not supported. Loyal customers spend less than non-members. |
 | **AOV by income & age** | Income is a stronger driver for spending than age.|✅ Supported. Income is a stronger driver for higher AOV than age.|
 | **AOV by social media influence & ad engagement** | High ad engagement and social media influence would increase AOV.| ❌ Not supported. Social media ads and enagegment do not increase AOV. | 
